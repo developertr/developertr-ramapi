@@ -1,0 +1,9 @@
+.welcomeContainer {
+    height: calc(100vh - 70px);
+    background: url('../../../public/images/wave.png') center calc(100vh - 30vw) / 100% no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
