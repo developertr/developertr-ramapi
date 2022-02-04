@@ -27,7 +27,7 @@ class Welcome extends React.Component {
     render() {
         return (
             <div className="welcomeContainer">
-                <small>React Demo Project for <b>hypernetlabs</b></small>
+                <small>React Learning & Demo Project</small>
                 <h1>@developertr</h1>
                 { this.state.seconds > 0 ?
                     <h2>{ this.state.seconds }</h2>
