@@ -32,9 +32,14 @@ class Welcome extends React.Component {
                 { this.state.seconds > 0 ?
                     <h2>{ this.state.seconds }</h2>
                 :
-                    <NavLink to="/home">
-                        <Button variant="contained" color="success" style={{marginTop: '33px'}}>Start</Button>
-                    </NavLink>
+                    <div>
+                        <NavLink to="/home">
+                            <Button variant="contained" color="success" style={{marginTop: '33px'}}>Infinite Scroll Demo</Button>
+                        </NavLink>
+                        <NavLink to="/pagination-home">
+                            <Button variant="contained" color="primary" style={{marginTop: '33px',marginLeft:'15px'}}>Pagination Demo</Button>
+                        </NavLink>
+                    </div>
                 }
             </div>
         )

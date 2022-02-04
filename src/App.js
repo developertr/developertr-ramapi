@@ -9,6 +9,7 @@ import Header from "./Components/General/Header" // Header Component
 // const NotFound = (props) => <h1>Page Not Found</h1> // HomePage
 const Welcome = lazy(() => import('./Pages/Welcome'));
 const Home = lazy(() => import('./Pages/Home'));
+const PaginationHome = lazy(() => import('./Pages/PaginationHome'));
 const About = lazy(() => import('./Pages/About'));
 const Character = lazy((props) => import('./Pages/Character'));
 
@@ -22,8 +23,10 @@ function App(props) {
           <Routes>
             <Route path="/" element={<Welcome />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/pagination-home/:page" element={<PaginationHome />} />
             <Route path="/about" element={<About />} />
             <Route path="/character/:id" element={<Character />}/>
+            <Route path="/character/:id/:page" element={<Character />}/>
           </Routes>
         </Suspense>
         </div>

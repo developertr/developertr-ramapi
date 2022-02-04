@@ -17,7 +17,7 @@ class CharacterList extends React.Component {
         return (
             <>
                 <Card className="characterCard">
-                    <Link to={`/character/${this.props.character.id}`}>
+                    <Link to={`/character/${this.props.character.id}/${this.props.characterPage}`}>
                         <CardMedia
                             className="image"
                             component="img"

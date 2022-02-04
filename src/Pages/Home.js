@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container } from '@mui/material'
+import { Container, Button } from '@mui/material'
+import { Link } from "react-router-dom";
 import CharacterList from "../Components/CharacterList"
-import '../styles/components/characters.scss'
+import '../styles/pages/characters.scss'
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 class Home extends React.Component {
@@ -27,12 +28,15 @@ class Home extends React.Component {
     }
 
     showDetail(character) {
-        
+        console.log(character)
     }
 
     render() {
         return (
             <Container>
+                <Link to="/">
+                    <Button variant="text" style={{ color: '#fff' }}>{ `< Back` }</Button>
+                </Link>  
                 <h1 style={{ color: '#fff' }}>Total Characters: {this.state.totalCount}</h1>
                 { this.state.characters &&
                     <InfiniteScroll
